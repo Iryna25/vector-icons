@@ -75,3 +75,17 @@ svg{
 		stroke-dasharray: 20;
 	}
 }
+
+
+#paperplane path{
+	fill: lightblue;
+	stroke: purple ;
+	stroke-dasharray: 120;
+	animation: dash 25s linear;
+}
+
+@keyframes dash{
+	to{
+		stroke-dashoffset:1000;
+	}
+}
