@@ -4,28 +4,17 @@ html{
 
 body{
 	margin: 0;
-	
+	padding: 40px;	
 }
 
 .container{
 	width: 80%;
 	margin: auto;
-	margin-top: 50px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
+	
 }
 
 span{
+	display: inline-block;	
 	margin: 20px;
 	font-size: 4em;
 }
@@ -56,8 +45,9 @@ span{
 }
 
 svg{
+	margin: 20px;	
 	width: 50%;
-	height: 50%;
+	height: 100%;
 }
  
 #world path{
@@ -67,7 +57,21 @@ svg{
 
 
 #world path:hover{
-	fill: yellow;
+	fill: purple;
 	stroke: lime;
 	opacity: 1;
+}
+
+
+#star path{
+	fill: yellow;
+	stroke: lime;
+	stroke-dasharray: 120;
+	animation: dash 8s linear;
+}
+
+@keyframes dash{
+	to{
+		stroke-dasharray: 20;
+	}
 }
